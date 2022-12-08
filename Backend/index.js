@@ -1,5 +1,6 @@
 const connectDB = require('./startup/db');
 const express = require('express');
+const app = express();
 const cors = require('cors');
 
 connectDB();
