@@ -1,11 +1,12 @@
 import React from "react";
+import CreateAccount from "../../components/createAccount/CreateAccount";
 
-function CreateAccount() {
+function CreateAccountPage(props) {
   return (
     <div>
-      <h1>This is the create account page</h1>
+      <CreateAccount createNewAccount={props.createNewAccount} />
     </div>
   );
 }
 
-export default CreateAccount;
+export default CreateAccountPage;

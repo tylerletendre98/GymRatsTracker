@@ -7,7 +7,6 @@ router.post('/newUser', async(req,res)=>{
         const newUser = await User.findOne({email:req.body.email})
         if (newUser) return res.status(400).send('User already registered.');
         const user = new User({
-            isApproved: false,
             fullName:req.body.fullName,
             password: req.body.password,
             email:req.body.email,
